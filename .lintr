@@ -1,0 +1,24 @@
+linters: list(
+    absolute_path_linter = absolute_path_linter(lax = FALSE),
+    assignment_linter = assignment_linter,
+    closed_curly_linter = closed_curly_linter(allow_single_line = TRUE),
+    commas_linter = commas_linter,
+    line_length_linter = line_length_linter(80),
+    implicit_integer_linter = implicit_integer_linter,
+    infix_spaces_linter = infix_spaces_linter,
+    no_tab_linter = no_tab_linter,
+    nonportable_path_linter = nonportable_path_linter(lax = FALSE),
+    object_length_linter = object_length_linter(35L),
+    object_usage_linter = object_usage_linter,
+    open_curly_linter = open_curly_linter(allow_single_line = TRUE),
+    semicolon_terminator_linter = semicolon_terminator_linter,
+    seq_linter = seq_linter,
+    spaces_inside_linter = spaces_inside_linter,
+    T_and_F_symbol_linter = T_and_F_symbol_linter,
+    todo_comment_linter = todo_comment_linter,
+    trailing_whitespace_linter = trailing_whitespace_linter,
+    undesirable_function_linter = undesirable_function_linter,
+    undesirable_operator_linter = undesirable_operator_linter,
+    unneeded_concatenation_linter = unneeded_concatenation_linter
+  )
+exclude: "# nolint|url|href|item"
